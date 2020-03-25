@@ -92,3 +92,12 @@ self.robot.moveForward(speed)|moves forward or backward.  Speed can be between -
 |self.robot.ram()|rams your enemy.Your distance must be less than 10 away. | takes 10 energy points | rams the enemy for 5-15 points of damage. This will also cause 0-5 points of health damage to you|
 |self.robot.dropBomb(enemy) |launches a bomb to where your enemy is located. |40 energy points |Does 5-20 points of health damage.|
 
+### Advanced
+You can keep historical data by keeping it in an array called self.robot.memo.
+
+Usage:
+self.robot.memo.append(distanceToEnemy)
+
+You can refer to the last appended item by using:
+self.robot.memo[len(self.robot.memo)-1]
+
