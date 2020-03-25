@@ -97,6 +97,7 @@ class object():
         self.destinationy=0
         self.tilecolor = tilecolor
         self.tiles=tiles
+        self.memo=[]
         
 
     def myTiles(self):
